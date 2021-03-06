@@ -23,6 +23,7 @@ dependencies {
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
+    testImplementation("cz.jirutka.spring:embedmongo-spring")
 }
 
 tasks.withType<KotlinCompile> {
