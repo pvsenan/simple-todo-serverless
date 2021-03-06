@@ -13,7 +13,7 @@ import se.pscode.todobackend.types.TodoRequest
 class ToDoController(@Autowired private val todoService: ToDoService) {
     @PostMapping("/create")
     fun createTodo(@RequestBody todoRequest: TodoRequest): TodoRequest{
-        todoService.saveTodo()
+        todoService.saveTodo(todoRequest)
         return todoRequest
     }
 }
